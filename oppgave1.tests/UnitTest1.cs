@@ -1,16 +1,5 @@
 namespace oppgave1.tests;
 
-        // if(celcius > 25 ){
-        //     return "ekstremt varmt";
-        // }else if (celcius > 15){
-        //     return "sånn passe";
-        // }else if (celcius > 5){
-        //     return "Litt kjølig";
-        // }else if(celcius > -10){
-        //     return "kjølig";
-        // }else{
-        //     return "veldig kaldt";
-        // }
 public class UnitTest1
 {
     [Fact]
@@ -22,22 +11,7 @@ public class UnitTest1
         Assert.Equal("veldig kaldt", Oppgave1.TempKvalitet(-10));
         Assert.Equal("Litt kjølig", Oppgave1.TempKvalitet(14));
     }
-    // static public int FåRabbat(string produkt){
-    //     int antal = butikkInnhold[produkt];
 
-    //     if (antal > 30){
-    //         return 15;
-    //     }else if (antal > 20){
-    //         return 10;
-    //     }else if (antal > 10){
-    //         return 5;
-    //     }else{
-    //         return 0;
-    //     }
-        //   {"ketchup", 15},
-        // {"grandiosa", 34},
-        // {"sennep", 22}
-    // }
     [Fact]
     public void TestFåRabbat(){
         Assert.Equal(15, Oppgave1.FåRabbat("grandiosa"));
